@@ -1,0 +1,3 @@
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug/CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug/CMakeFiles/rebuild_cache.dir

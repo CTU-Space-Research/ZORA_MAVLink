@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CTU_SR_Zora_MAVLink",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CTU_SR_Zora_MAVLink.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CTU_SR_Zora_MAVLink.elf-Debug-d4121aceeefb0315c436.json",
+					"name" : "CTU_SR_Zora_MAVLink.elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug",
+		"source" : "/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

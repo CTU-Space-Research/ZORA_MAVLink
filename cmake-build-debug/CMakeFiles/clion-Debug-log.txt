@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink -B /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/cmake-build-debug

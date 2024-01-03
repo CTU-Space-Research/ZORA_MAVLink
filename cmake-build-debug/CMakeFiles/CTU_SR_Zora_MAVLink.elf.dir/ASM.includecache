@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Startup/startup_stm32g491retx.s
+
