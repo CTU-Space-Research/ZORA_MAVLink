@@ -44,7 +44,13 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj: /Users/42r0n/STM32Cu
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/MAVLinkCommon.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/string.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
@@ -61,10 +67,6 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj: /Users/42r0n/STM32Cu
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_types.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_helpers.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/checksum.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_conversions.h \
@@ -80,7 +82,10 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj: /Users/42r0n/STM32Cu
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_ack.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_cancel.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_protocol_version.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_get_info.h
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_get_info.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h
 
 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj: /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Src/stm32g4xx_hal_msp.c \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/main.h \
@@ -183,7 +188,35 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj: /Users/42r0n
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
-  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_types.h \
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_helpers.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/checksum.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_conversions.h \
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/math.h \
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/stdio.h \
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_sha256.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_heartbeat.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_zora_led_status.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_int.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_long.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_ack.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_command_cancel.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink_msg_protocol_version.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_get_info.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h
 
 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/syscalls.c.obj: /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Src/syscalls.c \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/stat.h \
@@ -1203,6 +1236,10 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h:
 
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_timespec.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
+
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/endian.h:
@@ -1210,8 +1247,6 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/types.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/time.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/stm32g4xx_it.h:
 
@@ -1255,19 +1290,7 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/checksum.h:
 
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h:
-
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c:
-
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/_time.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h:
-
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/strings.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_timespec.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h:
 
@@ -1287,7 +1310,27 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
 
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
+
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/string.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/CMSIS/Include/cmsis_compiler.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
 
@@ -1295,11 +1338,7 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
 
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/times.h:
-
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/stm32g4xx_hal_conf.h:
-
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/MAVLinkCommon.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 
@@ -1310,6 +1349,8 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h:
 
@@ -1357,15 +1398,9 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h:
 
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h:
 
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
-
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/CMSIS/Include/cmsis_compiler.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
-
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h:
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/stdint.h:
 
@@ -1399,13 +1434,19 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
 
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h:
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
-/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/types.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/stm32g4xx_hal_conf.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/types.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h:
+
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h:
 
@@ -1413,8 +1454,10 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_helpers.h:
 
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h:
-
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h:
 
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/machine/_time.h:
+
+/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h:

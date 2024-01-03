@@ -90,8 +90,7 @@ void Error_Handler(void);
 #define LED_GREEN_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
-
-
+#include "MAVLinkImplementation.h"
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

@@ -26,7 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 //included after the pin defines
-#include "MAVLinkCommon.h"
+
+#include "ctu_sr_illustria_2/mavlink.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,7 +37,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
 
 /* USER CODE END PD */
 
@@ -140,7 +140,10 @@ int main(void)
 
   //does not owrk??
   //USART1->ICR |= USART_ICR_IDLECF; //clear the interrupt flag (so that we wont get interrupt instantly. next interrupt will occur only after RX buffer is not empty, eg on received data
-  //RESET LEDS
+
+  //SET
+  MAVLinkSetCurrentSystem(&mavlink_system,MAVlinkSystemID,MAVlinkComponentID);
+
   setLEDs(1, 1, 1);
 
   uint32_t lastTick = 0;

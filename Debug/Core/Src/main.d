@@ -32,12 +32,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- ../Core/Inc/MAVLinkCommon.h \
- /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_types.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../protocol.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_types.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_helpers.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../checksum.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_conversions.h \
@@ -49,7 +51,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_command_ack.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_command_cancel.h \
  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_protocol_version.h \
- /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_get_info.h
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_get_info.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h \
+ /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -84,12 +89,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-../Core/Inc/MAVLinkCommon.h:
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_types.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../protocol.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_types.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_helpers.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../checksum.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_conversions.h:
@@ -102,3 +109,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_command_cancel.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_protocol_version.h:
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../mavlink_get_info.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h:
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:
