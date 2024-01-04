@@ -18,6 +18,16 @@ static void MAVLinkSetCurrentSystem(mavlink_system_t * system, uint8_t SysId, ui
 
 static void MAVlinkWriteHearbeat(){
 
+
+	/*
+    mavlink_message_t message;
+    char buf[300]= {100};
+
+    unsigned len = mavlink_msg_heartbeat_pack( MAVlinkSystemID,MAVlinkComponentID, &message,MAV_TYPE_ROCKET,MAV_AUTOPILOT_INVALID,MAV_MODE_FLAG_DECODE_POSITION_SAFETY, 0,MAV_STATE_STANDBY);	    // Translate message to buffer	    len = mavlink_msg_to_send_buffer((uint8_t*)buf, &message);
+    len = mavlink_msg_to_send_buffer((uint8_t*)buf, &message);
+
+	 */
+
 	mavlink_heartbeat_t heartbeat = {
 	            .type = MAV_TYPE_ROCKET,
 	            .autopilot = MAV_AUTOPILOT_INVALID,

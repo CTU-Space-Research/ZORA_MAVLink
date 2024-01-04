@@ -379,9 +379,13 @@ MAVLINK_HELPER void _mav_finalize_message_chan_send(mavlink_channel_t chan, uint
     #ifdef MAVLINK_SEND_WHOLE_DATA_OVERRIDE
         //try sending the message in one long packet, instead of multiple small ones
         uint8_t outBuf[MAVLINK_MAX_MESSAGE_LENGTH] = {0};
-        memcpy(&outBuf,&buf,header_len);
-        memcpy(&outBuf[header_len]+1, packet, length);
-        memcpy(&outBuf[header_len]+1+length+1, ck, 2);
+
+        const uint8_t headerLength = MAVLINK_NUM_HEADER_BYTES;
+        memcpy(&outBuf,&buf,headerLength);
+
+        memcpy(&outBuf[headerLength], packet, length);
+
+        memcpy(&outBuf[headerLength+length], ck, 2);
 
         uint16_t bufferLen = header_len + 1 + 2 + (uint16_t)length + (uint16_t)signature_len;
 
