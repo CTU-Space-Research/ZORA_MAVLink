@@ -91,20 +91,17 @@ static bool MAVLinkHandleLongCommands(const mavlink_command_long_t * const comma
 static bool MAVLinkHandleReceivedMessage(mavlink_message_t * message, mavlink_status_t * messageStatus){
     switch (message->msgid) {
         case MAVLINK_MSG_ID_HEARTBEAT:
-            HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
             mavlink_heartbeat_t hb;
             mavlink_msg_heartbeat_decode(message,&hb);
             return true;
 
         case MAVLINK_MSG_ID_PROTOCOL_VERSION:
-            HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
             mavlink_protocol_version_t protocol;
             mavlink_msg_protocol_version_decode(message, &protocol);
             return true;
 
             //receive message of type Command
         case MAVLINK_MSG_ID_COMMAND_LONG:
-            HAL_GPIO_TogglePin(LED_ORANGE_GPIO_Port, LED_ORANGE_Pin);
             mavlink_command_long_t _command;
             mavlink_msg_command_long_decode(message, &_command);
             const mavlink_command_long_t command = _command; //convert it to a const data variable to prevent change later

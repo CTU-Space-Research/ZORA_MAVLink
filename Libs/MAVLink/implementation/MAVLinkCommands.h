@@ -12,8 +12,21 @@ static void setLEDs(bool green, bool orange, bool red){
     HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, red);
 }
 
+static void MAVlinkWriteLEDstatus();
 static void MAVlinkSetLEDs(const mavlink_command_long_t * const command){
+
     setLEDs((bool)command->param1, (bool)command->param2, (bool)command->param3);
+
+    mavlink_command_ack_t ack = {
+            .command = command->command,
+             .progress = 100, //meaning that 100% of command has been executed; only relevant for COMMAND_IN_PROGRESS
+            .result = MAV_RESULT_ACCEPTED
+    };
+    mavlink_msg_command_ack_send_struct(MAVLINK_COMM_0,&ack);
+
+    HAL_Delay(150);
+
+    MAVlinkWriteLEDstatus();
 }
 
 

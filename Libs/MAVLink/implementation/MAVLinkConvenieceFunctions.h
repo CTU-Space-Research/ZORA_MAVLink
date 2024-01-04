@@ -22,6 +22,7 @@ extern UART_HandleTypeDef huart1;
 //convenience function for sending byte-wise data through a channel
 static void mavlink_comm_send_ch(mavlink_channel_t chan, const uint8_t ch){
     if(chan == MAVLINK_COMM_0){
+        while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
         HAL_UART_Transmit_IT(&huart1, &ch, 1);
     }
 
@@ -40,6 +41,9 @@ static void mavlink_comm_send_ch(mavlink_channel_t chan, const uint8_t ch){
 //even though it has UART in its name, it has nothing to do with uart itself
 static void mavlink_comm_send_bytes(mavlink_channel_t chan, const char *buf, uint16_t len){
     if(chan == MAVLINK_COMM_0){
+        //wait until the TX register is not empty
+        while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
+
         HAL_UART_Transmit_IT(&huart1, (uint8_t *)buf, len);
     }
 }

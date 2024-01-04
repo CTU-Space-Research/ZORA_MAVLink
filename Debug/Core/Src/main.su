@@ -1,5 +1,5 @@
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h:23:13:mavlink_comm_send_ch	16	static
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h:41:13:mavlink_comm_send_bytes	16	static
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h:42:13:mavlink_comm_send_bytes	16	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../checksum.h:35:20:crc_accumulate	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../checksum.h:52:20:crc_init	16	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/../checksum.h:65:24:crc_calculate	24	static
@@ -26,17 +26,18 @@
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_heartbeat.h:321:20:mavlink_msg_heartbeat_decode	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_zora_led_status.h:174:20:mavlink_msg_zora_led_status_send_struct	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_command_long.h:444:20:mavlink_msg_command_long_decode	24	static
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_command_ack.h:210:20:mavlink_msg_command_ack_send_struct	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_protocol_version.h:193:20:mavlink_msg_protocol_version_send_struct	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/./mavlink_msg_protocol_version.h:293:20:mavlink_msg_protocol_version_decode	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h:9:13:setLEDs	16	static
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h:15:13:MAVlinkSetLEDs	16	static
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h:16:13:MAVlinkSetLEDs	32	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h:11:13:MAVlinkWriteLEDstatus	16	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:14:13:MAVLinkSetCurrentSystem	16	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:19:13:MAVlinkWriteHearbeat	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:44:13:MAVlinkWriteProtocolVersion	40	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:58:13:MAVLinkHandleLongCommands	24	static
 /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:91:13:MAVLinkHandleReceivedMessage	136	static
-/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:124:13:MAVLinkParseBuffer	336	static
+/Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h:121:13:MAVLinkParseBuffer	336	static
 ../Core/Src/main.c:99:5:main	16	static
 ../Core/Src/main.c:184:6:SystemClock_Config	88	static
 ../Core/Src/main.c:230:13:MX_ADC1_Init	56	static
