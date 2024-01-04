@@ -376,14 +376,28 @@ MAVLINK_HELPER void _mav_finalize_message_chan_send(mavlink_channel_t chan, uint
 	}
 #endif
 
-	MAVLINK_START_UART_SEND(chan, header_len + 3 + (uint16_t)length + (uint16_t)signature_len);
-	_mavlink_send_uart(chan, (const char *)buf, header_len+1);
-	_mavlink_send_uart(chan, packet, length);
-	_mavlink_send_uart(chan, (const char *)ck, 2);
-	if (signature_len != 0) {
-		_mavlink_send_uart(chan, (const char *)signature, signature_len);
-	}
-	MAVLINK_END_UART_SEND(chan, header_len + 3 + (uint16_t)length + (uint16_t)signature_len);
+    #ifdef MAVLINK_SEND_WHOLE_DATA_OVERRIDE
+        //try sending the message in one long packet, instead of multiple small ones
+        uint8_t outBuf[MAVLINK_MAX_MESSAGE_LENGTH] = {0};
+        memcpy(&outBuf,&buf,header_len);
+        memcpy(&outBuf[header_len]+1, packet, length);
+        memcpy(&outBuf[header_len]+1+length+1, ck, 2);
+
+        uint16_t bufferLen = header_len + 1 + 2 + (uint16_t)length + (uint16_t)signature_len;
+
+        _mavlink_send_uart(chan, (const char *)outBuf,bufferLen);
+
+    #else //MAVLink default implementation
+        MAVLINK_START_UART_SEND(chan, header_len + 3 + (uint16_t)length + (uint16_t)signature_len);
+        _mavlink_send_uart(chan, (const char *)buf, header_len+1);
+        _mavlink_send_uart(chan, packet, length);
+        _mavlink_send_uart(chan, (const char *)ck, 2);
+        if (signature_len != 0) {
+            _mavlink_send_uart(chan, (const char *)signature, signature_len);
+        }
+        MAVLINK_END_UART_SEND(chan, header_len + 3 + (uint16_t)length + (uint16_t)signature_len);
+
+    #endif
 }
 
 /**

@@ -14,7 +14,7 @@
 // Mavlink helper function necessary workarounds and methods. ORDER MATTERS
 //-------------
 
-//neccesary define in order to define the mavlink_channel_t BEFORE the header is loaded
+//custom implementation; neccesary define in order to define the mavlink_channel_t BEFORE the header is loaded
 #define HAVE_MAVLINK_CHANNEL_T
 typedef enum {
     MAVLINK_COMM_0,
@@ -25,7 +25,9 @@ typedef enum {
 
 #include "MAVLinkConvenieceFunctions.h"
 
-#define MAVLINK_USE_CONVENIENCE_FUNCTIONS
+#define MAVLINK_USE_CONVENIENCE_FUNCTIONS // enables the use of mavlink_msg_..._send() functions
+
+#define MAVLINK_SEND_WHOLE_DATA_OVERRIDE //custom implementation;fix for CRC error - in function _mav_finalize_message_chan_send - send the whole MAVLink package as one block, instead of header, payload and CRC separately
 
 #define MAVLINK_ENUM_MAVLINK_SYSTEM
 typedef struct MAVLinkSystemStruct {
