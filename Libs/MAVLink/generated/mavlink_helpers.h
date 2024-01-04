@@ -1138,12 +1138,12 @@ MAVLINK_HELPER void _mavlink_send_uart(mavlink_channel_t chan, const char *buf, 
 #ifdef MAVLINK_SEND_UART_BYTES
 	/* this is the more efficient approach, if the platform
 	   defines it */
-	MAVLINK_SEND_UART_BYTES(chan, (const uint8_t *)buf, len);
+    mavlink_comm_send_bytes(chan, (const uint8_t *)buf, len);
 #else
 	/* fallback to one byte at a time */
 	uint16_t i;
 	for (i = 0; i < len; i++) {
-		comm_send_ch(chan, (uint8_t)buf[i]);
+		mavlink_comm_send_ch(chan, (uint8_t)buf[i]);
 	}
 #endif
 }

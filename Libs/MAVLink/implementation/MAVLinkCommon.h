@@ -16,48 +16,51 @@ static void MAVLinkSetCurrentSystem(mavlink_system_t * system, uint8_t SysId, ui
     system->compid = CompId;
 }
 
-static int MAVlinkWriteHearbeat(){
+static void MAVlinkWriteHearbeat(){
 
-    mavlink_message_t message;
+	mavlink_message_t message;
 
-    char buf[300];
+	    char buf[300];
 
-    unsigned len = mavlink_msg_heartbeat_pack( MAVlinkSystemID,MAVlinkComponentID, &message,MAV_TYPE_ROCKET,MAV_AUTOPILOT_INVALID,MAV_MODE_FLAG_DECODE_POSITION_SAFETY, 0,MAV_STATE_STANDBY);
+	    unsigned len = mavlink_msg_heartbeat_pack( MAVlinkSystemID,MAVlinkComponentID, &message,MAV_TYPE_ROCKET,MAV_AUTOPILOT_INVALID,MAV_MODE_FLAG_DECODE_POSITION_SAFETY, 0,MAV_STATE_STANDBY);
 
-    // Translate message to buffer
-    len = mavlink_msg_to_send_buffer((uint8_t*)buf, &message);
+	    // Translate message to buffer
+	    len = mavlink_msg_to_send_buffer((uint8_t*)buf, &message);
 
-    // Write buffer to serial port, locks port while writing
-    int bytesWritten = HAL_UART_Transmit_IT(&huart1,(uint8_t *)&buf,len);
+	    // Write buffer to serial port, locks port while writing
+	    int bytesWritten = HAL_UART_Transmit_IT(&huart1,(uint8_t *)&buf,len);
 
-    return bytesWritten;
+	    return;
+
+	mavlink_heartbeat_t heartbeat = {
+	            .type = MAV_TYPE_ROCKET,
+	            .autopilot = MAV_AUTOPILOT_INVALID,
+	            .base_mode = MAV_MODE_FLAG_DECODE_POSITION_SAFETY,
+	            .custom_mode = 0,
+	            .system_status = MAV_STATE_STANDBY,
+	    };
+
+	    mavlink_msg_heartbeat_send_struct(MAVLINK_COMM_0,&heartbeat);
+
+	    return;
+
+
+
+
 }
 
-static int MAVlinkWriteProtocolVersion(){
+static void MAVlinkWriteProtocolVersion(){
 
-    mavlink_message_t message;
+    //TODO: Figure out the correct version hash data
+    mavlink_protocol_version_t data = {
+           .version = MAVLINK_MSG_ID_PROTOCOL_VERSION,
+           .max_version = MAVLINK_MSG_ID_PROTOCOL_VERSION,
+           .min_version = MAVLINK_MSG_ID_PROTOCOL_VERSION,
+           .library_version_hash = "TESTTEST",
+           .spec_version_hash = "PROTPROT"
+    };
 
-    char buf[300];
-    const uint8_t testLibHash[8] = "ABCDASDF";
-    const uint8_t tesProstHash[8] = "PROTPROT";
-
-    unsigned len = mavlink_msg_protocol_version_pack_chan( MAVlinkSystemID,
-                                                           MAVlinkComponentID,
-                                                           MAVLINK_COMM_0,
-                                                           &message,
-                                                           MAVLINK_MSG_ID_PROTOCOL_VERSION,
-                                                           MAVLINK_MSG_ID_PROTOCOL_VERSION,
-                                                           MAVLINK_MSG_ID_PROTOCOL_VERSION,
-                                                           (uint8_t *)&tesProstHash,
-                                                           (uint8_t *)&testLibHash);
-
-    // Translate message to buffer
-    len = mavlink_msg_to_send_buffer((uint8_t*)buf, &message);
-
-    // Write buffer to serial port, locks port while writing
-    int bytesWritten = HAL_UART_Transmit_IT(&huart1,(uint8_t *)&buf,len);
-
-    return bytesWritten;
+    mavlink_msg_protocol_version_send_struct(MAVLINK_COMM_0,&data);
 }
 
 static bool MAVLinkHandleLongCommands(const mavlink_command_long_t * const command){

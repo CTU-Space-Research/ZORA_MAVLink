@@ -1678,7 +1678,7 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
                 0x08000000                g_pfnVectors
                 0x080001d8                        . = ALIGN (0x4)
 
-.text           0x080001d8     0x6098
+.text           0x080001d8     0x6140
                 0x080001d8                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001d8       0xec /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
@@ -1737,657 +1737,657 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
  *fill*         0x080007ea        0x2 
  .text.MX_GPIO_Init
                 0x080007ec       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_comm_send_bytes
+                0x08000888       0x14 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_sha256_update
-                0x08000888       0x92 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x0800089c       0x92 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_msg_to_send_buffer
-                0x0800091a       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x0800092e       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_sha256_final_48
-                0x080009ea       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- *fill*         0x08000a9a        0x2 
+                0x080009fe       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ *fill*         0x08000aae        0x2 
  .text.mavlink_sign_packet
-                0x08000a9c       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08000ab0       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_finalize_message_buffer
-                0x08000b74      0x172 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- *fill*         0x08000ce6        0x2 
+                0x08000b88      0x172 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ *fill*         0x08000cfa        0x2 
  .text.mavlink_msg_heartbeat_pack
-                0x08000ce8       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08000cfc       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MAVlinkWriteHearbeat
-                0x08000d58       0x40 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.mavlink_msg_zora_led_status_pack
-                0x08000d98       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.mavlink_msg_heartbeat_decode
-                0x08000de8       0x20 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.mavlink_msg_protocol_version_decode
-                0x08000e08       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.mavlink_msg_command_long_decode
-                0x08000e30       0x26 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.mav_array_memcpy
-                0x08000e56       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- *fill*         0x08000e66        0x2 
- .text.mavlink_msg_protocol_version_pack_chan
-                0x08000e68       0x8c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08000d6c       0x40 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text._mav_finalize_message_chan_send
+                0x08000dac      0x19c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_msg_protocol_version_send_struct
+                0x08000f48       0x1c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MAVlinkWriteProtocolVersion
-                0x08000ef4       0x5c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.MAVlinkWriteLEDstatus
-                0x08000f50       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .text.MAVLinkHandleLongCommands
-                0x08000fb0       0x40 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08000f64       0x2c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_msg_zora_led_status_send_struct
+                0x08000f90       0x1a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_msg_heartbeat_decode
+                0x08000faa       0x20 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_msg_protocol_version_decode
+                0x08000fca       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.mavlink_msg_command_long_decode
+                0x08000ff2       0x26 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_signature_check
-                0x08000ff0      0x1e0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001018      0x1e0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_frame_char_buffer
-                0x080011d0      0x408 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x080011f8      0x408 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.mavlink_parse_char
-                0x080015d8       0x84 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001600       0x84 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.MAVlinkWriteLEDstatus
+                0x08001684       0x44 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .text.MAVLinkHandleLongCommands
+                0x080016c8       0x40 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MAVLinkHandleReceivedMessage
-                0x0800165c       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001708       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MAVLinkParseBuffer
-                0x080016e4       0x3c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001790       0x3c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.HAL_UART_RxCpltCallback
-                0x08001720       0x38 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
-                0x08001720                HAL_UART_RxCpltCallback
+                0x080017cc       0x38 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x080017cc                HAL_UART_RxCpltCallback
  .text.Error_Handler
-                0x08001758        0x4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
-                0x08001758                Error_Handler
+                0x08001804        0x4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001804                Error_Handler
  .text.MX_ADC1_Init
-                0x0800175c       0xec CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001808       0xec CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MX_TIM3_Init
-                0x08001848       0xb4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x080018f4       0xb4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MX_TIM4_Init
-                0x080018fc       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x080019a8       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MX_FDCAN2_Init
-                0x08001968       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001a14       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.MX_USART1_UART_Init
-                0x080019b4       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001a60       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .text.SystemClock_Config
-                0x08001a14       0x6e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
-                0x08001a14                SystemClock_Config
- *fill*         0x08001a82        0x2 
- .text.main     0x08001a84       0xac CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
-                0x08001a84                main
+                0x08001ac0       0x6e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001ac0                SystemClock_Config
+ *fill*         0x08001b2e        0x2 
+ .text.main     0x08001b30       0xa8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08001b30                main
  .text.HAL_MspInit
-                0x08001b30       0x38 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001b30                HAL_MspInit
+                0x08001bd8       0x38 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001bd8                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x08001b68       0xc8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001b68                HAL_ADC_MspInit
+                0x08001c10       0xc8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001c10                HAL_ADC_MspInit
  .text.HAL_FDCAN_MspInit
-                0x08001c30       0xa0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001c30                HAL_FDCAN_MspInit
+                0x08001cd8       0xa0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001cd8                HAL_FDCAN_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x08001cd0       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001cd0                HAL_TIM_Base_MspInit
+                0x08001d78       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001d78                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08001d40       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001d40                HAL_TIM_MspPostInit
+                0x08001de8       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001de8                HAL_TIM_MspPostInit
  .text.HAL_UART_MspInit
-                0x08001d90       0x98 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08001d90                HAL_UART_MspInit
+                0x08001e38       0x98 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001e38                HAL_UART_MspInit
  .text.NMI_Handler
-                0x08001e28        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e28                NMI_Handler
+                0x08001ed0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ed0                NMI_Handler
  .text.HardFault_Handler
-                0x08001e2a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e2a                HardFault_Handler
+                0x08001ed2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ed2                HardFault_Handler
  .text.MemManage_Handler
-                0x08001e2c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e2c                MemManage_Handler
+                0x08001ed4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ed4                MemManage_Handler
  .text.BusFault_Handler
-                0x08001e2e        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e2e                BusFault_Handler
+                0x08001ed6        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ed6                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001e30        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e30                UsageFault_Handler
+                0x08001ed8        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ed8                UsageFault_Handler
  .text.SVC_Handler
-                0x08001e32        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e32                SVC_Handler
+                0x08001eda        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001eda                SVC_Handler
  .text.DebugMon_Handler
-                0x08001e34        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e34                DebugMon_Handler
+                0x08001edc        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001edc                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001e36        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e36                PendSV_Handler
+                0x08001ede        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ede                PendSV_Handler
  .text.SysTick_Handler
-                0x08001e38        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e38                SysTick_Handler
+                0x08001ee0        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ee0                SysTick_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x08001e40       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e40                DMA1_Channel1_IRQHandler
+                0x08001ee8       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ee8                DMA1_Channel1_IRQHandler
  .text.TIM3_IRQHandler
-                0x08001e50       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e50                TIM3_IRQHandler
+                0x08001ef8       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001ef8                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x08001e60       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e60                TIM4_IRQHandler
+                0x08001f08       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001f08                TIM4_IRQHandler
  .text.USART1_IRQHandler
-                0x08001e70       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001e70                USART1_IRQHandler
+                0x08001f18       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001f18                USART1_IRQHandler
  .text.FDCAN2_IT0_IRQHandler
-                0x08001edc       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08001edc                FDCAN2_IT0_IRQHandler
+                0x08001f84       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001f84                FDCAN2_IT0_IRQHandler
  .text.SystemInit
-                0x08001eec        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x08001eec                SystemInit
- *fill*         0x08001eee        0x2 
+                0x08001f94        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x08001f94                SystemInit
+ *fill*         0x08001f96        0x2 
  .text.Reset_Handler
-                0x08001ef0       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
-                0x08001ef0                Reset_Handler
+                0x08001f98       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+                0x08001f98                Reset_Handler
  .text.Default_Handler
-                0x08001f40        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
-                0x08001f40                TIM1_BRK_TIM15_IRQHandler
-                0x08001f40                EXTI2_IRQHandler
-                0x08001f40                TIM8_TRG_COM_IRQHandler
-                0x08001f40                TIM8_CC_IRQHandler
-                0x08001f40                TIM1_CC_IRQHandler
-                0x08001f40                USB_HP_IRQHandler
-                0x08001f40                CORDIC_IRQHandler
-                0x08001f40                DMA2_Channel8_IRQHandler
-                0x08001f40                EXTI3_IRQHandler
-                0x08001f40                I2C3_ER_IRQHandler
-                0x08001f40                EXTI0_IRQHandler
-                0x08001f40                I2C2_EV_IRQHandler
-                0x08001f40                FPU_IRQHandler
-                0x08001f40                FDCAN1_IT1_IRQHandler
-                0x08001f40                TIM1_UP_TIM16_IRQHandler
-                0x08001f40                ADC1_2_IRQHandler
-                0x08001f40                SPI1_IRQHandler
-                0x08001f40                TIM6_DAC_IRQHandler
-                0x08001f40                TIM8_UP_IRQHandler
-                0x08001f40                DMA2_Channel2_IRQHandler
-                0x08001f40                DMA1_Channel4_IRQHandler
-                0x08001f40                TIM20_TRG_COM_IRQHandler
-                0x08001f40                USART3_IRQHandler
-                0x08001f40                DMA1_Channel7_IRQHandler
-                0x08001f40                UART5_IRQHandler
-                0x08001f40                ADC3_IRQHandler
-                0x08001f40                DMA2_Channel1_IRQHandler
-                0x08001f40                QUADSPI_IRQHandler
-                0x08001f40                I2C1_EV_IRQHandler
-                0x08001f40                DMA1_Channel6_IRQHandler
-                0x08001f40                UART4_IRQHandler
-                0x08001f40                DMA2_Channel4_IRQHandler
-                0x08001f40                RCC_IRQHandler
-                0x08001f40                TIM20_UP_IRQHandler
-                0x08001f40                Default_Handler
-                0x08001f40                DMA2_Channel7_IRQHandler
-                0x08001f40                RTC_TAMP_LSECSS_IRQHandler
-                0x08001f40                FMAC_IRQHandler
-                0x08001f40                EXTI15_10_IRQHandler
-                0x08001f40                DMA1_Channel8_IRQHandler
-                0x08001f40                TIM7_IRQHandler
-                0x08001f40                UCPD1_IRQHandler
-                0x08001f40                I2C3_EV_IRQHandler
-                0x08001f40                EXTI9_5_IRQHandler
-                0x08001f40                RTC_WKUP_IRQHandler
-                0x08001f40                PVD_PVM_IRQHandler
-                0x08001f40                SPI2_IRQHandler
-                0x08001f40                DMA2_Channel5_IRQHandler
-                0x08001f40                CRS_IRQHandler
-                0x08001f40                DMA1_Channel5_IRQHandler
-                0x08001f40                USB_LP_IRQHandler
-                0x08001f40                EXTI4_IRQHandler
-                0x08001f40                RNG_IRQHandler
-                0x08001f40                TIM1_TRG_COM_TIM17_IRQHandler
-                0x08001f40                FDCAN2_IT1_IRQHandler
-                0x08001f40                DMA1_Channel3_IRQHandler
-                0x08001f40                WWDG_IRQHandler
-                0x08001f40                LPUART1_IRQHandler
-                0x08001f40                DMA2_Channel6_IRQHandler
-                0x08001f40                FDCAN1_IT0_IRQHandler
-                0x08001f40                TIM2_IRQHandler
-                0x08001f40                COMP1_2_3_IRQHandler
-                0x08001f40                EXTI1_IRQHandler
-                0x08001f40                USART2_IRQHandler
-                0x08001f40                TIM20_BRK_IRQHandler
-                0x08001f40                I2C2_ER_IRQHandler
-                0x08001f40                DMA1_Channel2_IRQHandler
-                0x08001f40                TIM8_BRK_IRQHandler
-                0x08001f40                FLASH_IRQHandler
-                0x08001f40                TIM20_CC_IRQHandler
-                0x08001f40                SPI3_IRQHandler
-                0x08001f40                I2C1_ER_IRQHandler
-                0x08001f40                LPTIM1_IRQHandler
-                0x08001f40                DMAMUX_OVR_IRQHandler
-                0x08001f40                USBWakeUp_IRQHandler
-                0x08001f40                SAI1_IRQHandler
-                0x08001f40                DMA2_Channel3_IRQHandler
-                0x08001f40                COMP4_IRQHandler
-                0x08001f40                RTC_Alarm_IRQHandler
- *fill*         0x08001f42        0x2 
+                0x08001fe8        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+                0x08001fe8                TIM1_BRK_TIM15_IRQHandler
+                0x08001fe8                EXTI2_IRQHandler
+                0x08001fe8                TIM8_TRG_COM_IRQHandler
+                0x08001fe8                TIM8_CC_IRQHandler
+                0x08001fe8                TIM1_CC_IRQHandler
+                0x08001fe8                USB_HP_IRQHandler
+                0x08001fe8                CORDIC_IRQHandler
+                0x08001fe8                DMA2_Channel8_IRQHandler
+                0x08001fe8                EXTI3_IRQHandler
+                0x08001fe8                I2C3_ER_IRQHandler
+                0x08001fe8                EXTI0_IRQHandler
+                0x08001fe8                I2C2_EV_IRQHandler
+                0x08001fe8                FPU_IRQHandler
+                0x08001fe8                FDCAN1_IT1_IRQHandler
+                0x08001fe8                TIM1_UP_TIM16_IRQHandler
+                0x08001fe8                ADC1_2_IRQHandler
+                0x08001fe8                SPI1_IRQHandler
+                0x08001fe8                TIM6_DAC_IRQHandler
+                0x08001fe8                TIM8_UP_IRQHandler
+                0x08001fe8                DMA2_Channel2_IRQHandler
+                0x08001fe8                DMA1_Channel4_IRQHandler
+                0x08001fe8                TIM20_TRG_COM_IRQHandler
+                0x08001fe8                USART3_IRQHandler
+                0x08001fe8                DMA1_Channel7_IRQHandler
+                0x08001fe8                UART5_IRQHandler
+                0x08001fe8                ADC3_IRQHandler
+                0x08001fe8                DMA2_Channel1_IRQHandler
+                0x08001fe8                QUADSPI_IRQHandler
+                0x08001fe8                I2C1_EV_IRQHandler
+                0x08001fe8                DMA1_Channel6_IRQHandler
+                0x08001fe8                UART4_IRQHandler
+                0x08001fe8                DMA2_Channel4_IRQHandler
+                0x08001fe8                RCC_IRQHandler
+                0x08001fe8                TIM20_UP_IRQHandler
+                0x08001fe8                Default_Handler
+                0x08001fe8                DMA2_Channel7_IRQHandler
+                0x08001fe8                RTC_TAMP_LSECSS_IRQHandler
+                0x08001fe8                FMAC_IRQHandler
+                0x08001fe8                EXTI15_10_IRQHandler
+                0x08001fe8                DMA1_Channel8_IRQHandler
+                0x08001fe8                TIM7_IRQHandler
+                0x08001fe8                UCPD1_IRQHandler
+                0x08001fe8                I2C3_EV_IRQHandler
+                0x08001fe8                EXTI9_5_IRQHandler
+                0x08001fe8                RTC_WKUP_IRQHandler
+                0x08001fe8                PVD_PVM_IRQHandler
+                0x08001fe8                SPI2_IRQHandler
+                0x08001fe8                DMA2_Channel5_IRQHandler
+                0x08001fe8                CRS_IRQHandler
+                0x08001fe8                DMA1_Channel5_IRQHandler
+                0x08001fe8                USB_LP_IRQHandler
+                0x08001fe8                EXTI4_IRQHandler
+                0x08001fe8                RNG_IRQHandler
+                0x08001fe8                TIM1_TRG_COM_TIM17_IRQHandler
+                0x08001fe8                FDCAN2_IT1_IRQHandler
+                0x08001fe8                DMA1_Channel3_IRQHandler
+                0x08001fe8                WWDG_IRQHandler
+                0x08001fe8                LPUART1_IRQHandler
+                0x08001fe8                DMA2_Channel6_IRQHandler
+                0x08001fe8                FDCAN1_IT0_IRQHandler
+                0x08001fe8                TIM2_IRQHandler
+                0x08001fe8                COMP1_2_3_IRQHandler
+                0x08001fe8                EXTI1_IRQHandler
+                0x08001fe8                USART2_IRQHandler
+                0x08001fe8                TIM20_BRK_IRQHandler
+                0x08001fe8                I2C2_ER_IRQHandler
+                0x08001fe8                DMA1_Channel2_IRQHandler
+                0x08001fe8                TIM8_BRK_IRQHandler
+                0x08001fe8                FLASH_IRQHandler
+                0x08001fe8                TIM20_CC_IRQHandler
+                0x08001fe8                SPI3_IRQHandler
+                0x08001fe8                I2C1_ER_IRQHandler
+                0x08001fe8                LPTIM1_IRQHandler
+                0x08001fe8                DMAMUX_OVR_IRQHandler
+                0x08001fe8                USBWakeUp_IRQHandler
+                0x08001fe8                SAI1_IRQHandler
+                0x08001fe8                DMA2_Channel3_IRQHandler
+                0x08001fe8                COMP4_IRQHandler
+                0x08001fe8                RTC_Alarm_IRQHandler
+ *fill*         0x08001fea        0x2 
  .text.HAL_InitTick
-                0x08001f44       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08001f44                HAL_InitTick
+                0x08001fec       0x50 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x08001fec                HAL_InitTick
  .text.HAL_Init
-                0x08001f94       0x1e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08001f94                HAL_Init
- *fill*         0x08001fb2        0x2 
+                0x0800203c       0x1e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x0800203c                HAL_Init
+ *fill*         0x0800205a        0x2 
  .text.HAL_IncTick
-                0x08001fb4       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08001fb4                HAL_IncTick
+                0x0800205c       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x0800205c                HAL_IncTick
  .text.HAL_GetTick
-                0x08001fcc        0xc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08001fcc                HAL_GetTick
+                0x08002074        0xc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x08002074                HAL_GetTick
  .text.LL_ADC_REG_SetSequencerRanks
-                0x08001fd8       0x2e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x08002080       0x2e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
  .text.LL_ADC_SetChannelSamplingTime
-                0x08002006       0x2a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x080020ae       0x2a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
  .text.HAL_ADC_Init
-                0x08002030      0x274 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
-                0x08002030                HAL_ADC_Init
+                0x080020d8      0x274 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x080020d8                HAL_ADC_Init
  .text.HAL_ADC_ConfigChannel
-                0x080022a4      0x48c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
-                0x080022a4                HAL_ADC_ConfigChannel
+                0x0800234c      0x48c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x0800234c                HAL_ADC_ConfigChannel
  .text.HAL_ADCEx_MultiModeConfigChannel
-                0x08002730      0x164 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
-                0x08002730                HAL_ADCEx_MultiModeConfigChannel
+                0x080027d8      0x164 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+                0x080027d8                HAL_ADCEx_MultiModeConfigChannel
  .text.__NVIC_EnableIRQ
-                0x08002894       0x1c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x0800293c       0x1c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080028b0       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x08002958       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x080028d8       0x3e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- *fill*         0x08002916        0x2 
+                0x08002980       0x3e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ *fill*         0x080029be        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08002918       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x08002918                HAL_NVIC_SetPriorityGrouping
+                0x080029c0       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x080029c0                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0800293c       0x20 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x0800293c                HAL_NVIC_SetPriority
+                0x080029e4       0x20 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x080029e4                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800295c        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x0800295c                HAL_NVIC_EnableIRQ
+                0x08002a04        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x08002a04                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08002964       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x08002964                HAL_SYSTICK_Config
+                0x08002a0c       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x08002a0c                HAL_SYSTICK_Config
  .text.DMA_CalcDMAMUXChannelBaseAndMask
-                0x0800298c       0x48 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002a34       0x48 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.DMA_CalcDMAMUXRequestGenBaseAndMask
-                0x080029d4       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002a7c       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.HAL_DMA_Init
-                0x080029fc       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
-                0x080029fc                HAL_DMA_Init
+                0x08002aa4       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002aa4                HAL_DMA_Init
  .text.HAL_DMA_Abort
-                0x08002ad4       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
-                0x08002ad4                HAL_DMA_Abort
+                0x08002b7c       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002b7c                HAL_DMA_Abort
  .text.HAL_DMA_Abort_IT
-                0x08002b40       0x7e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
-                0x08002b40                HAL_DMA_Abort_IT
+                0x08002be8       0x7e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002be8                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x08002bbe       0xc4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
-                0x08002bbe                HAL_DMA_IRQHandler
- *fill*         0x08002c82        0x2 
+                0x08002c66       0xc4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08002c66                HAL_DMA_IRQHandler
+ *fill*         0x08002d2a        0x2 
  .text.FDCAN_CalcultateRamBlockAddresses
-                0x08002c84       0x78 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002d2c       0x78 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .text.HAL_FDCAN_Init
-                0x08002cfc      0x1d4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002cfc                HAL_FDCAN_Init
+                0x08002da4      0x1d4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002da4                HAL_FDCAN_Init
  .text.HAL_FDCAN_TxEventFifoCallback
-                0x08002ed0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ed0                HAL_FDCAN_TxEventFifoCallback
+                0x08002f78        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f78                HAL_FDCAN_TxEventFifoCallback
  .text.HAL_FDCAN_RxFifo0Callback
-                0x08002ed2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ed2                HAL_FDCAN_RxFifo0Callback
+                0x08002f7a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f7a                HAL_FDCAN_RxFifo0Callback
  .text.HAL_FDCAN_RxFifo1Callback
-                0x08002ed4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ed4                HAL_FDCAN_RxFifo1Callback
+                0x08002f7c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f7c                HAL_FDCAN_RxFifo1Callback
  .text.HAL_FDCAN_TxFifoEmptyCallback
-                0x08002ed6        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ed6                HAL_FDCAN_TxFifoEmptyCallback
+                0x08002f7e        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f7e                HAL_FDCAN_TxFifoEmptyCallback
  .text.HAL_FDCAN_TxBufferCompleteCallback
-                0x08002ed8        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ed8                HAL_FDCAN_TxBufferCompleteCallback
+                0x08002f80        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f80                HAL_FDCAN_TxBufferCompleteCallback
  .text.HAL_FDCAN_TxBufferAbortCallback
-                0x08002eda        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002eda                HAL_FDCAN_TxBufferAbortCallback
+                0x08002f82        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f82                HAL_FDCAN_TxBufferAbortCallback
  .text.HAL_FDCAN_TimestampWraparoundCallback
-                0x08002edc        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002edc                HAL_FDCAN_TimestampWraparoundCallback
+                0x08002f84        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f84                HAL_FDCAN_TimestampWraparoundCallback
  .text.HAL_FDCAN_TimeoutOccurredCallback
-                0x08002ede        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ede                HAL_FDCAN_TimeoutOccurredCallback
+                0x08002f86        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f86                HAL_FDCAN_TimeoutOccurredCallback
  .text.HAL_FDCAN_HighPriorityMessageCallback
-                0x08002ee0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ee0                HAL_FDCAN_HighPriorityMessageCallback
+                0x08002f88        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f88                HAL_FDCAN_HighPriorityMessageCallback
  .text.HAL_FDCAN_ErrorCallback
-                0x08002ee2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ee2                HAL_FDCAN_ErrorCallback
+                0x08002f8a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f8a                HAL_FDCAN_ErrorCallback
  .text.HAL_FDCAN_ErrorStatusCallback
-                0x08002ee4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ee4                HAL_FDCAN_ErrorStatusCallback
+                0x08002f8c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f8c                HAL_FDCAN_ErrorStatusCallback
  .text.HAL_FDCAN_IRQHandler
-                0x08002ee6      0x198 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x08002ee6                HAL_FDCAN_IRQHandler
- *fill*         0x0800307e        0x2 
+                0x08002f8e      0x198 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08002f8e                HAL_FDCAN_IRQHandler
+ *fill*         0x08003126        0x2 
  .text.HAL_GPIO_Init
-                0x08003080      0x1dc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x08003080                HAL_GPIO_Init
+                0x08003128      0x1dc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08003128                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x0800325c        0xe CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x0800325c                HAL_GPIO_ReadPin
+                0x08003304        0xe CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08003304                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x0800326a        0xa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x0800326a                HAL_GPIO_WritePin
+                0x08003312        0xa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08003312                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08003274       0x12 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x08003274                HAL_GPIO_TogglePin
- *fill*         0x08003286        0x2 
+                0x0800331c       0x12 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x0800331c                HAL_GPIO_TogglePin
+ *fill*         0x0800332e        0x2 
  .text.HAL_PWREx_ControlVoltageScaling
-                0x08003288      0x10c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
-                0x08003288                HAL_PWREx_ControlVoltageScaling
+                0x08003330      0x10c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x08003330                HAL_PWREx_ControlVoltageScaling
  .text.HAL_PWREx_DisableUCPDDeadBattery
-                0x08003394       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
-                0x08003394                HAL_PWREx_DisableUCPDDeadBattery
+                0x0800343c       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x0800343c                HAL_PWREx_DisableUCPDDeadBattery
  .text.RCC_GetSysClockFreqFromPLLSource
-                0x080033a4       0x58 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x0800344c       0x58 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x080033fc      0x4e8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x080033fc                HAL_RCC_OscConfig
+                0x080034a4      0x4e8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x080034a4                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x080038e4       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x080038e4                HAL_RCC_GetSysClockFreq
+                0x0800398c       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x0800398c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0800396c      0x1f8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x0800396c                HAL_RCC_ClockConfig
+                0x08003a14      0x1f8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08003a14                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08003b64        0xc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08003b64                HAL_RCC_GetHCLKFreq
+                0x08003c0c        0xc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08003c0c                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08003b70       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08003b70                HAL_RCC_GetPCLK1Freq
+                0x08003c18       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08003c18                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08003b94       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08003b94                HAL_RCC_GetPCLK2Freq
+                0x08003c3c       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08003c3c                HAL_RCC_GetPCLK2Freq
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x08003bb8      0x35c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
-                0x08003bb8                HAL_RCCEx_PeriphCLKConfig
+                0x08003c60      0x35c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x08003c60                HAL_RCCEx_PeriphCLKConfig
  .text.TIM_OC1_SetConfig
-                0x08003f14       0xac CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08003fbc       0xac CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x08003fc0       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004068       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x0800405c       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004104       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_OC5_SetConfig
-                0x080040f8       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080041a0       0x70 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_OC6_SetConfig
-                0x08004168       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004210       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x080041dc       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004284       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x08004200       0x26 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042a8       0x26 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08004226       0x14 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042ce       0x14 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspInit
-                0x0800423a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x0800423a                HAL_TIM_PWM_MspInit
+                0x080042e2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042e2                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0800423c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x0800423c                HAL_TIM_PeriodElapsedCallback
+                0x080042e4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042e4                HAL_TIM_PeriodElapsedCallback
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x0800423e        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x0800423e                HAL_TIM_OC_DelayElapsedCallback
+                0x080042e6        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042e6                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08004240        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004240                HAL_TIM_IC_CaptureCallback
+                0x080042e8        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042e8                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08004242        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004242                HAL_TIM_PWM_PulseFinishedCallback
+                0x080042ea        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042ea                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08004244        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004244                HAL_TIM_TriggerCallback
+                0x080042ec        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042ec                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x08004246      0x21e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004246                HAL_TIM_IRQHandler
+                0x080042ee      0x21e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080042ee                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x08004464       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004464                TIM_Base_SetConfig
+                0x0800450c       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x0800450c                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x08004534       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004534                HAL_TIM_Base_Init
+                0x080045dc       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080045dc                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x08004594       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004594                HAL_TIM_PWM_Init
+                0x0800463c       0x60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x0800463c                HAL_TIM_PWM_Init
  .text.TIM_OC2_SetConfig
-                0x080045f4       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x080045f4                TIM_OC2_SetConfig
+                0x0800469c       0x9c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x0800469c                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08004690      0x13a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08004690                HAL_TIM_PWM_ConfigChannel
+                0x08004738      0x13a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004738                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x080047ca       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x080047ca                TIM_ETR_SetConfig
- *fill*         0x080047e2        0x2 
+                0x08004872       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08004872                TIM_ETR_SetConfig
+ *fill*         0x0800488a        0x2 
  .text.HAL_TIM_ConfigClockSource
-                0x080047e4      0x140 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x080047e4                HAL_TIM_ConfigClockSource
+                0x0800488c      0x140 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x0800488c                HAL_TIM_ConfigClockSource
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08004924       0xa4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08004924                HAL_TIMEx_MasterConfigSynchronization
+                0x080049cc       0xa4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080049cc                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x080049c8        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049c8                HAL_TIMEx_CommutCallback
+                0x08004a70        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a70                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x080049ca        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049ca                HAL_TIMEx_BreakCallback
+                0x08004a72        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a72                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x080049cc        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049cc                HAL_TIMEx_Break2Callback
+                0x08004a74        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a74                HAL_TIMEx_Break2Callback
  .text.HAL_TIMEx_EncoderIndexCallback
-                0x080049ce        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049ce                HAL_TIMEx_EncoderIndexCallback
+                0x08004a76        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a76                HAL_TIMEx_EncoderIndexCallback
  .text.HAL_TIMEx_DirectionChangeCallback
-                0x080049d0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049d0                HAL_TIMEx_DirectionChangeCallback
+                0x08004a78        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a78                HAL_TIMEx_DirectionChangeCallback
  .text.HAL_TIMEx_IndexErrorCallback
-                0x080049d2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049d2                HAL_TIMEx_IndexErrorCallback
+                0x08004a7a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a7a                HAL_TIMEx_IndexErrorCallback
  .text.HAL_TIMEx_TransitionErrorCallback
-                0x080049d4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x080049d4                HAL_TIMEx_TransitionErrorCallback
+                0x08004a7c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08004a7c                HAL_TIMEx_TransitionErrorCallback
  .text.UART_EndRxTransfer
-                0x080049d6       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004a7e       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_TxISR_8BIT
-                0x08004a2c       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004ad4       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_TxISR_16BIT
-                0x08004a82       0x5a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004b2a       0x5a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_TxISR_8BIT_FIFOEN
-                0x08004adc       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004b84       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_TxISR_16BIT_FIFOEN
-                0x08004b50       0x78 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004bf8       0x78 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.HAL_UART_Transmit_IT
-                0x08004bc8       0xcc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08004bc8                HAL_UART_Transmit_IT
+                0x08004c70       0xcc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004c70                HAL_UART_Transmit_IT
  .text.HAL_UART_TxCpltCallback
-                0x08004c94        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08004c94                HAL_UART_TxCpltCallback
+                0x08004d3c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d3c                HAL_UART_TxCpltCallback
  .text.UART_EndTransmit_IT
-                0x08004c96       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d3e       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.HAL_UART_ErrorCallback
-                0x08004cba        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08004cba                HAL_UART_ErrorCallback
+                0x08004d62        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d62                HAL_UART_ErrorCallback
  .text.UART_DMAAbortOnError
-                0x08004cbc       0x14 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d64       0x14 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.HAL_UARTEx_RxEventCallback
-                0x08004cd0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08004cd0                HAL_UARTEx_RxEventCallback
- *fill*         0x08004cd2        0x2 
+                0x08004d78        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d78                HAL_UARTEx_RxEventCallback
+ *fill*         0x08004d7a        0x2 
  .text.HAL_UART_IRQHandler
-                0x08004cd4      0x334 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08004cd4                HAL_UART_IRQHandler
+                0x08004d7c      0x334 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08004d7c                HAL_UART_IRQHandler
  .text.UART_RxISR_8BIT
-                0x08005008       0xb2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x080050b0       0xb2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_RxISR_16BIT
-                0x080050ba       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
- *fill*         0x0800516a        0x2 
+                0x08005162       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ *fill*         0x08005212        0x2 
  .text.UART_RxISR_8BIT_FIFOEN
-                0x0800516c      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005214      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_RxISR_16BIT_FIFOEN
-                0x0800530c      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x080053b4      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x080054ac      0x388 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x080054ac                UART_SetConfig
+                0x08005554      0x388 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005554                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x08005834       0xca CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08005834                UART_AdvFeatureConfig
+                0x080058dc       0xca CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x080058dc                UART_AdvFeatureConfig
  .text.UART_WaitOnFlagUntilTimeout
-                0x080058fe       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x080058fe                UART_WaitOnFlagUntilTimeout
+                0x080059a6       0xd8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x080059a6                UART_WaitOnFlagUntilTimeout
  .text.UART_CheckIdleState
-                0x080059d6       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x080059d6                UART_CheckIdleState
+                0x08005a7e       0x74 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005a7e                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x08005a4a       0x66 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08005a4a                HAL_UART_Init
+                0x08005af2       0x66 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005af2                HAL_UART_Init
  .text.UART_Start_Receive_IT
-                0x08005ab0      0x148 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08005ab0                UART_Start_Receive_IT
+                0x08005b58      0x148 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005b58                UART_Start_Receive_IT
  .text.HAL_UART_Receive_IT
-                0x08005bf8       0x5c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x08005bf8                HAL_UART_Receive_IT
+                0x08005ca0       0x5c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08005ca0                HAL_UART_Receive_IT
  .text.UARTEx_SetNbDataToProcess
-                0x08005c54       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005cfc       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
  .text.HAL_UARTEx_WakeupCallback
-                0x08005ca0        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005ca0                HAL_UARTEx_WakeupCallback
+                0x08005d48        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005d48                HAL_UARTEx_WakeupCallback
  .text.HAL_UARTEx_RxFifoFullCallback
-                0x08005ca2        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005ca2                HAL_UARTEx_RxFifoFullCallback
+                0x08005d4a        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005d4a                HAL_UARTEx_RxFifoFullCallback
  .text.HAL_UARTEx_TxFifoEmptyCallback
-                0x08005ca4        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005ca4                HAL_UARTEx_TxFifoEmptyCallback
+                0x08005d4c        0x2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005d4c                HAL_UARTEx_TxFifoEmptyCallback
  .text.HAL_UARTEx_DisableFifoMode
-                0x08005ca6       0x3e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005ca6                HAL_UARTEx_DisableFifoMode
+                0x08005d4e       0x3e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005d4e                HAL_UARTEx_DisableFifoMode
  .text.HAL_UARTEx_SetTxFifoThreshold
-                0x08005ce4       0x4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005ce4                HAL_UARTEx_SetTxFifoThreshold
+                0x08005d8c       0x4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005d8c                HAL_UARTEx_SetTxFifoThreshold
  .text.HAL_UARTEx_SetRxFifoThreshold
-                0x08005d2e       0x4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x08005d2e                HAL_UARTEx_SetRxFifoThreshold
+                0x08005dd6       0x4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08005dd6                HAL_UARTEx_SetRxFifoThreshold
  .text.__udivmoddi4
-                0x08005d78      0x2bc /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x08005d78                __udivmoddi4
- .text.memcmp   0x08006034       0x60 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcmp.o)
-                0x08006034                memcmp
- .text.memset   0x08006094       0xa4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memset.o)
-                0x08006094                memset
+                0x08005e20      0x2bc /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x08005e20                __udivmoddi4
+ .text.memcmp   0x080060dc       0x60 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcmp.o)
+                0x080060dc                memcmp
+ .text.memset   0x0800613c       0xa4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memset.o)
+                0x0800613c                memset
  .text.__libc_init_array
-                0x08006138       0x50 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-init.o)
-                0x08006138                __libc_init_array
+                0x080061e0       0x50 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-init.o)
+                0x080061e0                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08006188        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
-                0x08006188                __retarget_lock_acquire_recursive
+                0x08006230        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
+                0x08006230                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0800618c        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
-                0x0800618c                __retarget_lock_release_recursive
+                0x08006234        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
+                0x08006234                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x08006190       0x14 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080061a4        0xc /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-atexit.o)
-                0x080061a4                atexit
+                0x08006238       0x14 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x0800624c        0xc /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-atexit.o)
+                0x0800624c                atexit
  .text.__libc_fini_array
-                0x080061b0       0x28 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-fini.o)
-                0x080061b0                __libc_fini_array
+                0x08006258       0x28 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-fini.o)
+                0x08006258                __libc_fini_array
  .text.__register_exitproc
-                0x080061d8       0x80 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__atexit.o)
-                0x080061d8                __register_exitproc
+                0x08006280       0x80 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__atexit.o)
+                0x08006280                __register_exitproc
  *(.glue_7)
- .glue_7        0x08006258        0x0 linker stubs
+ .glue_7        0x08006300        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08006258        0x0 linker stubs
+ .glue_7t       0x08006300        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08006258        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08006300        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08006258        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
-                0x08006258                _init
- .init          0x0800625c        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08006300        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
+                0x08006300                _init
+ .init          0x08006304        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08006264        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
-                0x08006264                _fini
- .fini          0x08006268        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
-                0x08006270                        . = ALIGN (0x4)
-                0x08006270                        _etext = .
+ .fini          0x0800630c        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
+                0x0800630c                _fini
+ .fini          0x08006310        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
+                0x08006318                        . = ALIGN (0x4)
+                0x08006318                        _etext = .
 
-.vfp11_veneer   0x08006270        0x0
- .vfp11_veneer  0x08006270        0x0 linker stubs
+.vfp11_veneer   0x08006318        0x0
+ .vfp11_veneer  0x08006318        0x0 linker stubs
 
-.v4_bx          0x08006270        0x0
- .v4_bx         0x08006270        0x0 linker stubs
+.v4_bx          0x08006318        0x0
+ .v4_bx         0x08006318        0x0 linker stubs
 
-.iplt           0x08006270        0x0
- .iplt          0x08006270        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x08006318        0x0
+ .iplt          0x08006318        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08006270      0x1ac
-                0x08006270                        . = ALIGN (0x4)
+.rodata         0x08006318      0x1ac
+                0x08006318                        . = ALIGN (0x4)
  *(.rodata)
+ .rodata        0x08006318       0x16 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  *(.rodata*)
- .rodata.MAVlinkWriteProtocolVersion.str1.4
-                0x08006270       0x15 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- *fill*         0x08006285        0x3 
+ *fill*         0x0800632e        0x2 
  .rodata.mavlink_message_crcs.1
-                0x08006288       0x54 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08006330       0x54 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .rodata.mavlink_sha256_constant_256
-                0x080062dc      0x100 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x08006384      0x100 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .rodata.APBPrescTable
-                0x080063dc        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x080063dc                APBPrescTable
+                0x08006484        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x08006484                APBPrescTable
  .rodata.AHBPrescTable
-                0x080063e4       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x080063e4                AHBPrescTable
+                0x0800648c       0x10 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x0800648c                AHBPrescTable
  .rodata.UARTPrescTable
-                0x080063f4       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
-                0x080063f4                UARTPrescTable
+                0x0800649c       0x18 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x0800649c                UARTPrescTable
  .rodata.denominator.0
-                0x0800640c        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x080064b4        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
  .rodata.numerator.1
-                0x08006414        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
-                0x0800641c                        . = ALIGN (0x4)
+                0x080064bc        0x8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x080064c4                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800641c        0x0
-                0x0800641c                        . = ALIGN (0x4)
+.ARM.extab      0x080064c4        0x0
+                0x080064c4                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800641c                        . = ALIGN (0x4)
+                0x080064c4                        . = ALIGN (0x4)
 
-.ARM            0x0800641c        0x8
-                0x0800641c                        . = ALIGN (0x4)
-                0x0800641c                        __exidx_start = .
+.ARM            0x080064c4        0x8
+                0x080064c4                        . = ALIGN (0x4)
+                0x080064c4                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800641c        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcpy.o)
+ .ARM.exidx     0x080064c4        0x8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcpy.o)
  .ARM.exidx.text.__udivmoddi4
-                0x08006424        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x080064cc        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x08006424                        __exidx_end = .
-                0x08006424                        . = ALIGN (0x4)
+                0x080064cc                        __exidx_end = .
+                0x080064cc                        . = ALIGN (0x4)
 
-.rel.dyn        0x08006424        0x0
- .rel.iplt      0x08006424        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x080064cc        0x0
+ .rel.iplt      0x080064cc        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x08006424        0x0
-                0x08006424                        . = ALIGN (0x4)
-                0x08006424                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080064cc        0x0
+                0x080064cc                        . = ALIGN (0x4)
+                0x080064cc                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08006424                        PROVIDE (__preinit_array_end = .)
-                0x08006424                        . = ALIGN (0x4)
+                0x080064cc                        PROVIDE (__preinit_array_end = .)
+                0x080064cc                        . = ALIGN (0x4)
 
-.init_array     0x08006424        0x8
-                0x08006424                        . = ALIGN (0x4)
-                0x08006424                        PROVIDE (__init_array_start = .)
+.init_array     0x080064cc        0x8
+                0x080064cc                        . = ALIGN (0x4)
+                0x080064cc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08006424        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x080064cc        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08006428        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0800642c                        PROVIDE (__init_array_end = .)
-                0x0800642c                        . = ALIGN (0x4)
+ .init_array    0x080064d0        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080064d4                        PROVIDE (__init_array_end = .)
+                0x080064d4                        . = ALIGN (0x4)
 
-.fini_array     0x0800642c        0x4
-                0x0800642c                        . = ALIGN (0x4)
-                0x0800642c                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080064d4        0x4
+                0x080064d4                        . = ALIGN (0x4)
+                0x080064d4                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800642c        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08006430                        PROVIDE (__fini_array_end = .)
-                0x08006430                        . = ALIGN (0x4)
-                0x08006430                        _sidata = LOADADDR (.data)
+ .fini_array    0x080064d4        0x4 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080064d8                        PROVIDE (__fini_array_end = .)
+                0x080064d8                        . = ALIGN (0x4)
+                0x080064d8                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x10 load address 0x08006430
+.data           0x20000000       0x10 load address 0x080064d8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -2410,17 +2410,17 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
                 0x20000010                        _edata = .
 
 .tm_clone_table
-                0x20000010        0x0 load address 0x08006440
+                0x20000010        0x0 load address 0x080064e8
  .tm_clone_table
                 0x20000010        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000010        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x20000010        0x0 load address 0x08006440
+.igot.plt       0x20000010        0x0 load address 0x080064e8
  .igot.plt      0x20000010        0x0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x20000010                        . = ALIGN (0x4)
 
-.bss            0x20000010      0xb38 load address 0x08006440
+.bss            0x20000010      0xb38 load address 0x080064e8
                 0x20000010                        _sbss = .
                 0x20000010                        __bss_start__ = _sbss
  *(.bss)
@@ -2485,7 +2485,7 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
                 0x20000b48                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000b48      0x600 load address 0x08006440
+                0x20000b48      0x600 load address 0x080064e8
                 0x20000b48                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20000b48                        PROVIDE (_end = .)
@@ -2583,225 +2583,225 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
 LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a
 LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a
 
-.debug_info     0x00000000    0x23a34
- .debug_info    0x00000000     0x58a5 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .debug_info    0x000058a5     0x232b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_info    0x00007bd0     0x1408 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_info    0x00008fd8      0x39c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_info    0x00009374       0x30 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
- .debug_info    0x000093a4      0xba0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_info    0x00009f44     0x356b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
- .debug_info    0x0000d4af     0x2e99 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
- .debug_info    0x00010348      0xf72 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_info    0x000112ba      0x9c8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_info    0x00011c82     0x1bd1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_info    0x00013853      0x795 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_info    0x00013fe8      0x9bd CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_info    0x000149a5      0xddb CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_info    0x00015780      0xe3c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_info    0x000165bc     0x3e56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_info    0x0001a412     0x248d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
- .debug_info    0x0001c89f     0x5fa7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
- .debug_info    0x00022846     0x11ee CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+.debug_info     0x00000000    0x239e3
+ .debug_info    0x00000000     0x5854 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00005854     0x232b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_info    0x00007b7f     0x1408 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_info    0x00008f87      0x39c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_info    0x00009323       0x30 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+ .debug_info    0x00009353      0xba0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_info    0x00009ef3     0x356b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+ .debug_info    0x0000d45e     0x2e99 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+ .debug_info    0x000102f7      0xf72 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_info    0x00011269      0x9c8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_info    0x00011c31     0x1bd1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_info    0x00013802      0x795 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_info    0x00013f97      0x9bd CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_info    0x00014954      0xddb CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_info    0x0001572f      0xe3c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_info    0x0001656b     0x3e56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_info    0x0001a3c1     0x248d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_info    0x0001c84e     0x5fa7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_info    0x000227f5     0x11ee CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_abbrev   0x00000000     0x32f0
- .debug_abbrev  0x00000000      0x6b9 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x000006b9      0x2c1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_abbrev  0x0000097a      0x279 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_abbrev  0x00000bf3      0x120 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_abbrev  0x00000d13       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
- .debug_abbrev  0x00000d37      0x27d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_abbrev  0x00000fb4      0x30d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
- .debug_abbrev  0x000012c1      0x382 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
- .debug_abbrev  0x00001643      0x390 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_abbrev  0x000019d3      0x215 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_abbrev  0x00001be8      0x1f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_abbrev  0x00001dd8      0x1f9 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_abbrev  0x00001fd1      0x249 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_abbrev  0x0000221a      0x2ab CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_abbrev  0x000024c5      0x27f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00002744      0x299 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_abbrev  0x000029dd      0x2aa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
- .debug_abbrev  0x00002c87      0x32e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
- .debug_abbrev  0x00002fb5      0x33b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+.debug_abbrev   0x00000000     0x3317
+ .debug_abbrev  0x00000000      0x6e0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x000006e0      0x2c1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_abbrev  0x000009a1      0x279 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_abbrev  0x00000c1a      0x120 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_abbrev  0x00000d3a       0x24 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+ .debug_abbrev  0x00000d5e      0x27d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_abbrev  0x00000fdb      0x30d CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+ .debug_abbrev  0x000012e8      0x382 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+ .debug_abbrev  0x0000166a      0x390 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_abbrev  0x000019fa      0x215 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_abbrev  0x00001c0f      0x1f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_abbrev  0x00001dff      0x1f9 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001ff8      0x249 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x00002241      0x2ab CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_abbrev  0x000024ec      0x27f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x0000276b      0x299 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_abbrev  0x00002a04      0x2aa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x00002cae      0x32e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_abbrev  0x00002fdc      0x33b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
 .debug_loclists
-                0x00000000    0x10adb
+                0x00000000    0x10c7f
  .debug_loclists
-                0x00000000     0x16b8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x00000000     0x185c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .debug_loclists
-                0x000016b8      0x19b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x0000185c      0x19b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .debug_loclists
-                0x00001853       0x65 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x000019f7       0x65 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
  .debug_loclists
-                0x000018b8      0x12f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x00001a5c      0x12f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  .debug_loclists
-                0x000019e7     0x17b5 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x00001b8b     0x17b5 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
  .debug_loclists
-                0x0000319c     0x16a7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+                0x00003340     0x16a7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
  .debug_loclists
-                0x00004843      0x431 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x000049e7      0x431 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .debug_loclists
-                0x00004c74      0x558 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x00004e18      0x558 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .debug_loclists
-                0x000051cc      0xce3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x00005370      0xce3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .debug_loclists
-                0x00005eaf      0x267 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x00006053      0x267 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .debug_loclists
-                0x00006116      0x58f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x000062ba      0x58f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
  .debug_loclists
-                0x000066a5      0x568 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x00006849      0x568 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .debug_loclists
-                0x00006c0d      0xe91 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x00006db1      0xe91 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .debug_loclists
-                0x00007a9e     0x382c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x00007c42     0x382c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .debug_loclists
-                0x0000b2ca     0x1b60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x0000b46e     0x1b60 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
  .debug_loclists
-                0x0000ce2a     0x354a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x0000cfce     0x354a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .debug_loclists
-                0x00010374      0x767 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x00010518      0x767 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_aranges  0x00000000     0x1548
+.debug_aranges  0x00000000     0x1550
  .debug_aranges
-                0x00000000      0x158 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x00000000      0x160 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x00000158       0x68 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x00000160       0x68 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .debug_aranges
-                0x000001c0       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x000001c8       0x88 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
  .debug_aranges
-                0x00000248       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x00000250       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
  .debug_aranges
-                0x00000270       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+                0x00000278       0x28 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
  .debug_aranges
-                0x00000298      0x130 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x000002a0      0x130 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  .debug_aranges
-                0x000003c8      0x120 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x000003d0      0x120 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
  .debug_aranges
-                0x000004e8      0x100 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+                0x000004f0      0x100 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
  .debug_aranges
-                0x000005e8       0xe0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x000005f0       0xe0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .debug_aranges
-                0x000006c8       0x90 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x000006d0       0x90 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .debug_aranges
-                0x00000758      0x208 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x00000760      0x208 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .debug_aranges
-                0x00000960       0x58 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x00000968       0x58 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .debug_aranges
-                0x000009b8      0x140 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x000009c0      0x140 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
  .debug_aranges
-                0x00000af8       0x98 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x00000b00       0x98 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000b90       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x00000b98       0xb0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00000c40      0x3e0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x00000c48      0x3e0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .debug_aranges
-                0x00001020      0x240 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x00001028      0x240 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
  .debug_aranges
-                0x00001260      0x248 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x00001268      0x248 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .debug_aranges
-                0x000014a8       0xa0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x000014b0       0xa0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
 .debug_rnglists
-                0x00000000     0x11f4
+                0x00000000     0x121f
  .debug_rnglists
-                0x00000000      0x160 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                0x00000000      0x18b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x00000160       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x0000018b       0x4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .debug_rnglists
-                0x000001ac       0x61 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x000001d7       0x61 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
  .debug_rnglists
-                0x0000020d       0x1a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x00000238       0x1a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
  .debug_rnglists
-                0x00000227       0x19 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+                0x00000252       0x19 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
  .debug_rnglists
-                0x00000240       0xdf CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x0000026b       0xdf CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  .debug_rnglists
-                0x0000031f      0x18c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+                0x0000034a      0x18c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
  .debug_rnglists
-                0x000004ab      0x156 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+                0x000004d6      0x156 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
  .debug_rnglists
-                0x00000601       0xa3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x0000062c       0xa3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .debug_rnglists
-                0x000006a4       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x000006cf       0x6c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .debug_rnglists
-                0x00000710      0x189 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x0000073b      0x189 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .debug_rnglists
-                0x00000899       0x3f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x000008c4       0x3f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .debug_rnglists
-                0x000008d8       0xf1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x00000903       0xf1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
  .debug_rnglists
-                0x000009c9       0x81 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x000009f4       0x81 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .debug_rnglists
-                0x00000a4a       0x92 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x00000a75       0x92 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .debug_rnglists
-                0x00000adc      0x314 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x00000b07      0x314 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .debug_rnglists
-                0x00000df0      0x1c3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x00000e1b      0x1c3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
  .debug_rnglists
-                0x00000fb3      0x1cb CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x00000fde      0x1cb CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .debug_rnglists
-                0x0000117e       0x76 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x000011a9       0x76 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_line     0x00000000    0x1d87f
- .debug_line    0x00000000     0x25e6 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .debug_line    0x000025e6      0x81e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_line    0x00002e04      0x698 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_line    0x0000349c      0x2a6 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_line    0x00003742       0x7b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
- .debug_line    0x000037bd      0x790 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_line    0x00003f4d     0x2746 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
- .debug_line    0x00006693     0x21d1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
- .debug_line    0x00008864      0x915 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_line    0x00009179      0xd2e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_line    0x00009ea7     0x1af7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_line    0x0000b99e      0x769 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_line    0x0000c107      0xb4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_line    0x0000cc51      0xeaa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_line    0x0000dafb     0x12b8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_line    0x0000edb3     0x51e3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_line    0x00013f96     0x26a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
- .debug_line    0x00016639     0x643e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
- .debug_line    0x0001ca77      0xe08 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+.debug_line     0x00000000    0x1d9fe
+ .debug_line    0x00000000     0x2765 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00002765      0x81e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_line    0x00002f83      0x698 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_line    0x0000361b      0x2a6 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_line    0x000038c1       0x7b CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+ .debug_line    0x0000393c      0x790 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_line    0x000040cc     0x2746 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+ .debug_line    0x00006812     0x21d1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+ .debug_line    0x000089e3      0x915 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_line    0x000092f8      0xd2e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_line    0x0000a026     0x1af7 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_line    0x0000bb1d      0x769 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_line    0x0000c286      0xb4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_line    0x0000cdd0      0xeaa CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_line    0x0000dc7a     0x12b8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000ef32     0x51e3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_line    0x00014115     0x26a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_line    0x000167b8     0x643e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_line    0x0001cbf6      0xe08 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_str      0x00000000     0x90e5
- .debug_str     0x00000000     0x3372 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
-                               0x365e (size before relaxing)
- .debug_str     0x00003372      0x348 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+.debug_str      0x00000000     0x9136
+ .debug_str     0x00000000     0x33c3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+                               0x36af (size before relaxing)
+ .debug_str     0x000033c3      0x348 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
                                0x1ac1 (size before relaxing)
- .debug_str     0x000036ba      0x1a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_str     0x0000370b      0x1a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
                                0x103e (size before relaxing)
- .debug_str     0x0000385d       0xc3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_str     0x000038ae       0xc3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
                                 0x3d7 (size before relaxing)
- .debug_str     0x00003920       0x80 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
+ .debug_str     0x00003971       0x80 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Startup/startup_stm32g491retx.s.obj
                                  0xd1 (size before relaxing)
- .debug_str     0x000039a0      0x488 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_str     0x000039f1      0x488 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
                                 0xd75 (size before relaxing)
- .debug_str     0x00003e28      0xa4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+ .debug_str     0x00003e79      0xa4a CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
                                0x136f (size before relaxing)
- .debug_str     0x00004872      0x5f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+ .debug_str     0x000048c3      0x5f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
                                0x1349 (size before relaxing)
- .debug_str     0x00004e62      0x4a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_str     0x00004eb3      0x4a3 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
                                 0xcba (size before relaxing)
- .debug_str     0x00005305      0x2bc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_str     0x00005356      0x2bc CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
                                 0x805 (size before relaxing)
- .debug_str     0x000055c1      0xbf2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_str     0x00005612      0xbf2 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
                                0x127b (size before relaxing)
- .debug_str     0x000061b3      0x129 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_str     0x00006204      0x129 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
                                 0x5a4 (size before relaxing)
- .debug_str     0x000062dc      0x50e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_str     0x0000632d      0x50e CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
                                 0x846 (size before relaxing)
- .debug_str     0x000067ea      0x29f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_str     0x0000683b      0x29f CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
                                 0x893 (size before relaxing)
- .debug_str     0x00006a89      0x3b1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_str     0x00006ada      0x3b1 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
                                 0xab6 (size before relaxing)
- .debug_str     0x00006e3a      0xedd CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_str     0x00006e8b      0xedd CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
                                0x18f9 (size before relaxing)
- .debug_str     0x00007d17      0x912 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_str     0x00007d68      0x912 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
                                0x157c (size before relaxing)
- .debug_str     0x00008629      0x858 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_str     0x0000867a      0x858 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
                                0x1266 (size before relaxing)
- .debug_str     0x00008e81      0x264 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .debug_str     0x00008ed2      0x264 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
                                 0xb80 (size before relaxing)
 
 .comment        0x00000000       0x55
@@ -2825,37 +2825,37 @@ LOAD /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gc
  .comment       0x00000055       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .comment       0x00000055       0x56 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_frame    0x00000000     0x3b8c
- .debug_frame   0x00000000      0x4f4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x000004f4      0x130 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_frame   0x00000624      0x124 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_frame   0x00000748       0x30 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_frame   0x00000778      0x274 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_frame   0x000009ec      0x33c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
- .debug_frame   0x00000d28      0x2f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
- .debug_frame   0x00001018      0x1e4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_frame   0x000011fc      0x16c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_frame   0x00001368      0x4a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_frame   0x00001808       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_frame   0x000018d8      0x268 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_frame   0x00001b40      0x198 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_frame   0x00001cd8      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_frame   0x00001e78      0xb4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_frame   0x000029c4      0x620 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
- .debug_frame   0x00002fe4      0x67c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
- .debug_frame   0x00003660      0x1c8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
- .debug_frame   0x00003828       0xc8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x000038f0       0x24 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixunssfsi.o)
- .debug_frame   0x00003914       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00003940       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00003974       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcmp.o)
- .debug_frame   0x000039a0       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memset.o)
- .debug_frame   0x000039cc       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-init.o)
- .debug_frame   0x000039f8       0xb0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
- .debug_frame   0x00003aa8       0x5c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x00003b04       0x20 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-atexit.o)
- .debug_frame   0x00003b24       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-fini.o)
- .debug_frame   0x00003b58       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__atexit.o)
+.debug_frame    0x00000000     0x3bb8
+ .debug_frame   0x00000000      0x520 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x00000520      0x130 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_frame   0x00000650      0x124 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_frame   0x00000774       0x30 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_frame   0x000007a4      0x274 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_frame   0x00000a18      0x33c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj
+ .debug_frame   0x00000d54      0x2f0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj
+ .debug_frame   0x00001044      0x1e4 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_frame   0x00001228      0x16c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_frame   0x00001394      0x4a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_frame   0x00001834       0xd0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_frame   0x00001904      0x268 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_frame   0x00001b6c      0x198 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_frame   0x00001d04      0x1a0 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00001ea4      0xb4c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_frame   0x000029f0      0x620 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_frame   0x00003010      0x67c CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_frame   0x0000368c      0x1c8 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .debug_frame   0x00003854       0xc8 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x0000391c       0x24 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x00003940       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000396c       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000039a0       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memcmp.o)
+ .debug_frame   0x000039cc       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-memset.o)
+ .debug_frame   0x000039f8       0x2c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-init.o)
+ .debug_frame   0x00003a24       0xb0 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-lock.o)
+ .debug_frame   0x00003ad4       0x5c /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00003b30       0x20 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_frame   0x00003b50       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-fini.o)
+ .debug_frame   0x00003b84       0x34 /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(libc_a-__atexit.o)
 
 .debug_line_str
                 0x00000000      0x2a6

@@ -141,7 +141,7 @@ int main(void)
   //does not owrk??
   //USART1->ICR |= USART_ICR_IDLECF; //clear the interrupt flag (so that we wont get interrupt instantly. next interrupt will occur only after RX buffer is not empty, eg on received data
 
-  //SET
+  //SET MAVLINK SYSTEM ID AND COMPONENT ID
   MAVLinkSetCurrentSystem(&mavlink_system,MAVlinkSystemID,MAVlinkComponentID);
 
   setLEDs(1, 1, 1);
@@ -160,7 +160,7 @@ int main(void)
       //send Heartbeat every second
       if(tick > (lastTick + 1000)){
           MAVlinkWriteHearbeat();
-    	  MAVlinkWriteLEDstatus();
+    	  //MAVlinkWriteLEDstatus();
           lastTick = tick;
       }
 

@@ -174,7 +174,13 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj: /Users/42r0n
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/stm32g4xx_it.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/string.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
@@ -189,13 +195,6 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj: /Users/42r0n
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkImplementation.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkSetup.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkConvenieceFunctions.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/mavlink.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/version.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/ctu_sr_illustria_2/ctu_sr_illustria_2.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/protocol.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_types.h \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_helpers.h \
@@ -216,7 +215,8 @@ CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/stm32g4xx_it.c.obj: /Users/42r0n
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/generated/mavlink_get_info.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommands.h \
   /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkMessages.h \
-  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Libs/MAVLink/implementation/MAVLinkCommon.h \
+  /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Inc/stm32g4xx_it.h
 
 CMakeFiles/CTU_SR_Zora_MAVLink.elf.dir/Core/Src/syscalls.c.obj: /Users/42r0n/STM32CubeIDE/workspace_1.11.2/CTU_SR_Zora_MAVLink/Core/Src/syscalls.c \
   /Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/arm-none-eabi/include/sys/stat.h \
