@@ -1,5 +1,5 @@
 
-# 📖 [MAVLink C implementation for STM32] <a name="about-project"></a>
+# 📖 MAVLink C implementation for STM32
 
 > Example how to use pre-generated MAVLink files (with slight modifications) in a embedded STM32 project.
 
@@ -10,7 +10,7 @@
 
 
 <!-- GETTING STARTED -->
-## 💻 Getting Started</a>
+## 💻 Getting Started
 
 **Before using the code on ARM Cortex M0 MCUs, be aware that it might not work. I should have fixed the problem already, but it is not a certainty**
 
@@ -26,7 +26,7 @@ Add _after_ GPIO definition generated from CubeMX in _main.h_ in _/* USER CODE B
 
 You can add the _MAVLinkImplementation.h_ to any other .h file
 
-## 🛠 Compiling the library in an existing project</a>
+## 🛠 Compiling the library in an existing project
 
 > STM32CubeIDE as a compiler and programmer
 
