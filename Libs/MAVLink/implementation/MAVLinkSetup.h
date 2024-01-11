@@ -14,6 +14,8 @@
 // Mavlink helper function necessary workarounds and methods. ORDER MATTERS
 //-------------
 
+
+
 //custom implementation; neccesary define in order to define the mavlink_channel_t BEFORE the header is loaded
 #define HAVE_MAVLINK_CHANNEL_T
 typedef enum {
@@ -22,6 +24,14 @@ typedef enum {
     MAVLINK_COMM_2,
     MAVLINK_COMM_3
 } mavlink_channel_t;
+
+//custom names of the channels
+typedef enum {
+    MAVLINK_CHAN_DEFAULT = MAVLINK_COMM_0, //default type. Do not use. Always use explicit channel
+    MAVLINK_CHAN_UART = MAVLINK_COMM_1,
+    MAVLINK_CHAN_RocketBus = MAVLINK_COMM_2,
+    MAVLINK_CHAN_RocketLink = MAVLINK_COMM_3
+} mavlink_custom_channel_names_t;
 
 #include "MAVLinkConvenieceFunctions.h"
 

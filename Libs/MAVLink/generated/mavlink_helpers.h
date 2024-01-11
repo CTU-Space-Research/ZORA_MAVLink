@@ -307,7 +307,7 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message(mavlink_message_t* msg, uint8_t
 
 static inline void _mav_parse_error(mavlink_status_t *status)
 {
-    status->parse_error++;
+	status->parse_error++;
 }
 
 #ifdef MAVLINK_USE_CONVENIENCE_FUNCTIONS

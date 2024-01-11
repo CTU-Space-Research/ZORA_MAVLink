@@ -159,6 +159,8 @@ int main(void)
 
       //send Heartbeat every second
       if(tick > (lastTick + 1000)){
+          //TODO: implement heartbeat with timer/scheduler
+          //TODO: implement heartbeat tiemout countdown and subsequent action
           MAVlinkWriteHearbeat();
     	  //MAVlinkWriteLEDstatus();
           lastTick = tick;

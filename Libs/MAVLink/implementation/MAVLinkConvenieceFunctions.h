@@ -18,21 +18,42 @@ extern UART_HandleTypeDef huart1;
 // but their implementation has to be defined in these function
 //-------------
 
+//TODO:
+// - create a TX queue
+// - always push the message to a queue
+// - scheduler /other worker will process the message once the line is idle
+// - implement "delay" to the message - that the message will be send after X ms after adding it to the queue;
+// to prevent line congestion
+
 
 //convenience function for sending byte-wise data through a channel
 static void mavlink_comm_send_ch(mavlink_channel_t chan, const uint8_t ch){
-    if(chan == MAVLINK_COMM_0){
-        while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
-        HAL_UART_Transmit_IT(&huart1, &ch, 1);
-    }
 
-    //example
-    /*
-     * if(chan == MAVLINK_COMM_1){
-     *  SEND WITH CAN
-     *
-     * }
-     */
+    switch (chan) {
+        case MAVLINK_CHAN_DEFAULT:
+            //do NOT use the 0 channel.
+            //Always explicitly state what channel you want to use
+            return;
+            break;
+
+        case MAVLINK_CHAN_UART:
+
+            //wait until the TX register is not empty
+            while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
+            HAL_UART_Transmit_IT(&huart1, &ch, 1);
+
+        case MAVLINK_CHAN_RocketBus:
+
+            //TODO: IMMPLEMENT
+
+        case MAVLINK_CHAN_RocketLink:
+
+            //TODO: IMMPLEMENT
+
+        default:
+            return;
+
+    }
 }
 
 //required define for the protocol to use "mavlink_comm_send_bytes" function
@@ -40,11 +61,30 @@ static void mavlink_comm_send_ch(mavlink_channel_t chan, const uint8_t ch){
 //convenience function for sending whole data block at once through a channel
 //even though it has UART in its name, it has nothing to do with uart itself
 static void mavlink_comm_send_bytes(mavlink_channel_t chan, const char *buf, uint16_t len){
-    if(chan == MAVLINK_COMM_0){
-        //wait until the TX register is not empty
-        while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
 
-        HAL_UART_Transmit_IT(&huart1, (uint8_t *)buf, len);
+    switch (chan) {
+        case MAVLINK_CHAN_DEFAULT:
+                //do NOT use the 0 channel.
+                //Always explicitly state what channel you want to use
+                return;
+            break;
+
+        case MAVLINK_CHAN_UART:
+            //wait until the TX register is not empty
+            while(!__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC)){}
+            HAL_UART_Transmit_IT(&huart1, (uint8_t *)buf, len);
+
+        case MAVLINK_CHAN_RocketBus:
+
+            //TODO: IMMPLEMENT
+
+        case MAVLINK_CHAN_RocketLink:
+
+            //TODO: IMMPLEMENT
+
+        default:
+            return;
+
     }
 }
 

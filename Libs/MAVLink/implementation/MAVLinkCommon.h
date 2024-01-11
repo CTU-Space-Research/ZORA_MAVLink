@@ -106,10 +106,14 @@ static bool MAVLinkHandleReceivedMessage(mavlink_message_t * message, mavlink_st
             mavlink_msg_command_long_decode(message, &_command);
             const mavlink_command_long_t command = _command; //convert it to a const data variable to prevent change later
 
+            //TODO: manage ACKs
+
 
             //parse the command
             return MAVLinkHandleLongCommands(&command);
             break;
+
+        //TODO: Implement MAVLINK_MSG_ID_COMMAND_INT
 
         default:
             return false;
@@ -123,6 +127,12 @@ static void MAVLinkParseBuffer(const uint8_t * receivedBuffer){
     mavlink_status_t messageStatus;
 
     //figure out what to do when the mavlink parses the buffer before it should end??
+
+    //TODO:
+    // - buffer must always be tied to the index - the index must not change during the buffer reading
+    // -> implement the RX and parsing buffer as a structs and always create new instance with buffer-index pair
+    // - pass const struct const pointer to this function
+
     for(uint16_t i = 0; i < UART_RX_Received_NextFreeByteIndex;i++){
         const uint8_t byte = receivedBuffer[i];
 
